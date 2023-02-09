@@ -1,0 +1,182 @@
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+
+body{
+    
+    background-color: bisque;
+    color: brown;
+}
+
+main{
+    width: 370px;
+    height: 250px;
+    margin: 50px auto;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    border-radius: 5px;
+
+}
+
+.div_contacto{
+    width: 350px;
+    height: 30px;
+    display: flex;
+    margin: 30px auto;
+    justify-content: space-around;
+    background-color: white;
+    padding-top: 5px;
+    border-radius: 10px;
+}
+.div_numero{
+    display: flex;
+    justify-content: space-between;
+}
+
+.div_numero img{
+    width: 20px;
+    height: 20px;
+    margin-right: 3px;
+
+}
+.div_mail{
+    display: flex;
+    justify-content: space-between;
+}
+.div_mail img{
+    width: 20px;
+    height: 20px;
+    margin-right: 5px;
+}
+
+.header_nav{
+    width: 360px;
+    height: 20px;
+    margin-bottom: 50px;
+}
+.header_nav_titulo{
+    
+    color: brown;
+    padding-left: 10px;
+    padding-top: 5px;
+    margin-bottom: 10px;
+    animation:rotate-scale-up .65s linear both
+}
+
+
+.header_nav_lista{
+    display: flex;
+    justify-content: space-around;
+    list-style: none;
+    color: brown;
+}
+
+.informacion{
+    width: 355px;
+    height: 100px;
+    text-align: center;
+    color: brown;
+    margin: 10px auto;
+}
+.seccion_boton{
+    width: 200px;
+    margin: 20px auto;
+    
+    color: black;
+}
+.boton a {
+    text-decoration: none;
+    color: white;
+    font-size: 20px;
+}
+
+.boton{
+    width: 200px;
+    height: 50px;
+    background-color: brown;
+}
+
+.seccion_boton :hover{
+    color: white;
+    background-color: grey;
+    cursor: pointer;
+}
+
+.fotoHarina{
+    width: 100%;
+    height: 200px;
+}
+
+.footer{
+    width: 350px;
+    height: 50px;
+    margin: 20px auto;
+    font-size: 10px;
+    margin-bottom: 5px;
+}
+.footer_div{
+    display: flex;
+    margin-top: 10px;
+}
+.footer_div a img{
+    width: 30px;
+    height: 30px;
+    margin-left: 20px;
+
+}
+
+.formulario{
+    display: flex;
+    justify-content: space-around;
+}
+.formulario input{
+    margin: 5px 5px;
+}
+
+.main_listado{
+    width: 80%;
+    margin: 0px auto;
+    
+}
+
+
+.div_form{
+    margin: 0px 0px;
+    width: 100%;
+}
+
+
+.tabla{
+    width: 65%;
+    height: auto;
+    margin: 20px auto;
+    background-color: white;
+    overflow: hidden;
+}
+.columna{
+    color:black;
+    background-color: peru;
+    padding: 5px auto;
+
+}
+.columna_resp{
+    background-color: saddlebrown;
+    color: white;
+    font-size: 20px;
+    text-align: center;
+}
+
+.inicio{
+    font-style: none;
+}
+.boton_submit{
+    margin: 0 auto;
+    display: flex;
+    justify-content: center;
+}
+.boton_submit2{
+    background-color: brown;
+    color: antiquewhite;
+}

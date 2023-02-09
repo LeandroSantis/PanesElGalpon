@@ -1,0 +1,88 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" th:href="@{/css/index2.css}" />
+
+    <title>Panificados El Galpon</title>
+</head>
+
+<body class="index_body">
+    <div class="div_contacto">
+        <div class="div_numero">
+            <img th:src="@{/fotos/telefono.png}" alt="">
+            <p>Número de celular</p>
+        </div>
+        <div class="div_mail">
+            <img th:src="@{/fotos/correo.png}" alt="">
+            <p>mail@gmail.com</p>
+        </div>
+    </div>
+    <main>
+        <div>
+            <h1>Realizar Pedido</h1>
+            <div class="formulario">
+                <form autocomplete="off" method="post" novalidate th:action="@{/pedidos/guardar}" class="formulario_celdas" th:object="${pedido}">
+                    
+                    <input id="id" type="hidden" placeholder="Id" name="id" th:field="*{id}">
+                    <div>
+                        <label for="nombre">Nombre Pedido :</label>
+                        <input id="nombrePedido" type="text" placeholder="Nombre"  th:field="*{nombrePedido}">
+                    </div>
+                    <div>
+                        <label for="panesQueso">Panes con Queso :</label>
+                        <input id="panesQueso" type="number" placeholder="Cantidad Panes-Queso"  th:field="*{panesQueso}">
+                    </div>
+                    <div>
+                        <label for="panesSinQueso">Panes Sin Queso :</label>
+                        <input id="panesSinqueso" type="text" placeholder="Cantidad Panes-Sin Queso" name="panesSinQueso"  th:field="*{panesSinQueso}">
+
+                    </div>
+                    <div>
+                        <label for="Pizza">Pizza :</label>
+                        <input id="Pizza" type="text" placeholder="Cantidad Pizzas"  th:field="*{Pizza}">
+                    </div>
+                    <div>
+                        <label for="numero">Numero :</label>
+                        <input id="numero" type="text" placeholder="Numero de telefono"  th:field="*{numero}">
+                    </div>
+                    <div>
+                        <label for="mail">Email :</label>
+                        <input id="mail" type="text" placeholder="@email.com"  th:field="*{mail}">
+                    </div>
+                    <div>
+                        <label for="retiroLocal">¿Lo retiras en el Local?</label>
+                        <input id="retiroLocal" type="text" placeholder="Retiro local"  th:field="*{retiroLocal}">
+                    </div>
+                    <div>
+                        <label for="envioDomicilio">Envio Domicilio :</label>
+                        <input id="envioDomicilio" type="text" placeholder="Domicilio retiro"  th:field="*{envioDomicilio}">
+                    </div>
+                    <br>
+                    <div class="boton_submit">
+                        <input class="boton_submit2" type="submit" placeholder="Enviar">
+                    </div>
+    
+                </form>
+            </div>
+            
+        
+        </div>
+        <footer class="footer">
+            <hr>
+            <div class="footer_div">
+              <h2 class="footer_nombre">°Since 2018</h2>
+              <a href=""><img class="imagen" th:src="@{/fotos/facebook.png}" alt="facebook"></a>
+               <a href=""><img class="imagen" th:src="@{/fotos/instagram.png}" alt="instagram"></a>
+        
+            </div>
+        </footer>
+    </main>
+    <script th:src="@{/js/java.js}"></script>
+
+    
+</body>

@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="es" xmlns:th="http://www.thymeleaf.org" xmlns:sec="http://www.thymeleaf.org/extras/spring-security">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+    <link rel="stylesheet" th:href="@{/css/index2.css}" />
+
+    <title>Panificados El Galpon</title>
+</head>
+
+<body class="index_body">
+    <div class="div_contacto">
+        <div class="div_numero">
+            <img th:src="@{/fotos/telefono.png}" alt="">
+            <p>Número de celular</p>
+        </div>
+        <div class="div_mail">
+            <img th:src="@{/fotos/correo.png}" alt="">
+            <p>mail@gmail.com</p>
+        </div>
+    </div>
+    <main>
+        <header>
+            <nav class="header_nav">
+                <h2 class="header_nav_titulo">El Galpón</h2>
+                <div class="">
+                    <ul class="header_nav_lista">
+                        <li class="header_list-nombre">Hamburguesa</li>
+                        <li class="header_list-nombre">Pizza</li>
+                        <li class="header_list-nombre">Pancho</li>
+                        <li class="header_list-nombre">Sandwuich</li>
+                    </ul>
+                </div>
+            </nav>
+
+        </header>
+        <img class="fotoHarina" th:src="@{/fotos/harina.jpg}" alt="">
+
+        <section class="informacion">
+            <h1 class="informacion_titulo">Panificadora</h1>
+            <p class="informacion_datos"> Realizamos pedidos personalizados, adecuados a las necesidades de nuestros clientes y garantizamos un servicio eficaz y profesional, cumpliendo con los plazos de entrega establecidos.</p>
+        </section>
+        <section class="seccion_boton"><button class="boton"><a th:href="@{/pedidos/CrearPedido}">Realizar Pedido</a></button></section>
+        <section class="seccion_boton"><button class="boton"><a th:href="@{/pedidos/lista}">Ver pedidos</a></button></section>
+        <footer class="footer">
+            <hr>
+            <div class="footer_div">
+              <h2 class="footer_nombre">°Since 2018</h2>
+              <a href=""><img class="imagen" th:src="@{/fotos/facebook.png}" alt="facebook"></a>
+               <a href=""><img class="imagen" th:src="@{/fotos/instagram.png}" alt="instagram"></a>
+        
+            </div>
+        </footer>
+    </main>
+    
+    
+
+</body>
+
+</html>
